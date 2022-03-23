@@ -1,0 +1,26 @@
+{
+    "mysql": {
+        "host": "localhost",
+        "port": 49161,
+        "password": "rabbit",
+        "user": "root"
+    },
+    "rabbit": {
+        "host": "localhost" 
+    },
+    "query": {
+        "queue": "test",
+        "database": "test",
+        "table": "temp",
+        "rabbit2mysql": [
+            {
+                "rabbit": "name",
+                "mysql": "sensorname"
+            },
+            {
+                "rabbit": "temp",
+                "mysql": "value"
+            }
+        ]
+    }
+}
